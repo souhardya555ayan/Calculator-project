@@ -123,7 +123,7 @@ button:active{
 }
 
 @media (max-width: 500px) {
-    #body {
+    #mainbody {
         width: 92%;
         min-height: auto;
         padding: 15px;
