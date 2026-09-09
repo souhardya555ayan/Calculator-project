@@ -399,11 +399,15 @@ button:active{ background-color: #cfe2ee; }
 }
 
 @media (max-width: 500px) {
-    body { padding: 8px; }
+    body { padding: 8px;
+    align-items: flex-start; }
     .total { max-width: 95vw; }
     #calculator { max-width: 95vw; width: 95vw; }
-    .heading{ font-size: 20px; }
-    #display { height: 70px; font-size: 24px; }
-    #keys { gap: 6px; padding: 8px; }
-    #keys button { font-size: 16px; }
+    .heading{ font-size: 25px; }
+    #display { height: 105px; font-size: 32px; padding: 18px; }
+    #keys { gap: 12px; padding: 14px; }
+    #keys button { font-size: 20px; }
+    #mainbody{padding: 24px;
+    gap: 22px;
+    border-radius: 22px;}
 }
