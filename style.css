@@ -20,10 +20,12 @@ button{
     border: none;
     color: white;
     background-color: #2A2D35;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     aspect-ratio: 1/1;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 button:hover{
@@ -89,7 +91,7 @@ button:active{
 #keys{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 8px;
     border-radius: 20px;
     background-color: #333742;
     padding: 15px;
@@ -124,18 +126,21 @@ button:active{
 
 @media (max-width: 500px) {
     #mainbody {
-        width: 92%;
+        width: 94%;
         min-height: auto;
-        padding: 15px;
-        margin: 15px auto;
+        padding: 10px;
+        margin: 10px auto;
     }
 
     #display {
-        font-size: 25px;
+        width: 100%;
+        font-size: 30px;
+        box-sizing: border-box;
+
     }
 
     #keys {
-        gap: 7px;
+        gap: 6px;
     }
 
     #keys button {
