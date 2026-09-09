@@ -148,6 +148,10 @@ button:active{
     }
 } */
 
+
+
+
+/* 
 *{
     margin: 0;
     padding: 0;
@@ -295,4 +299,111 @@ button:active{
     #keys button {
         font-size: 18px;
     }
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #1494e4;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+button{
+    width: 100%;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: #2A2D35;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    aspect-ratio: 1 / 1;
+}
+
+button:hover{ background-color: #6e717a; }
+button:active{ background-color: #cfe2ee; }
+.operator{ background-color: orange; }
+.operator:hover{ background-color: #ffcc66; }
+.AC{ background-color: rgb(80, 80, 166); }
+.AC:hover { background-color: rgb(120, 120, 200); }
+.equal{ background-color: #1A73E8; }
+.equal:hover { background-color: #5AA9F5; }
+
+#mainbody{
+    background-color: rgba(150, 132, 132, 0.809);
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 12px;
+    width: 100%;
+}
+
+#display{
+    height: 80px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    background-color: #333742;
+    color: white;
+    font-size: 28px;
+    text-align: right;
+    padding: 15px;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    border-radius: 20px;
+    background-color: #333742;
+    padding: 10px;
+    width: 100%;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 360px;
+}
+#calculator{
+    font-family: Arial,sans-serif;
+    background-color: black;
+    border-radius: 20px;
+    max-width: 360px;
+    width: 100%;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.heading{
+    font-size: 28px;
+    text-align: center;
+}
+
+#display::placeholder{
+    color: rgba(255,255,255,1);
+    opacity: 1;
+}
+
+@media (max-width: 500px) {
+    body { padding: 8px; }
+    .total { max-width: 95vw; }
+    #calculator { max-width: 95vw; width: 95vw; }
+    .heading{ font-size: 20px; }
+    #display { height: 70px; font-size: 24px; }
+    #keys { gap: 6px; padding: 8px; }
+    #keys button { font-size: 16px; }
 }
