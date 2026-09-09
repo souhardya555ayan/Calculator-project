@@ -15,14 +15,15 @@ body{
 
 button{
     height: 100px;
-    width: 100px;
+    width: 100%;
     border-radius: 50%;
     border: none;
     color: white;
     background-color: #2A2D35;
-    font-size: 3rem;
+    font-size: 22px;
     font-weight: bold;
     cursor: pointer;
+    aspect-ratio: 1/1;
 }
 
 button:hover{
@@ -66,6 +67,10 @@ button:active{
     flex-direction: column;
     height: 780px;
     gap: 20px;
+    width: 90%;
+    max-width: 400px;
+    min-height: 550px;
+    margin: 20px auto;
 }
 
 #display{
@@ -76,7 +81,7 @@ button:active{
     background-color: #333742;
     box-sizing: border-box;
     color: white;
-    font-size: 5rem;
+    font-size: 30px;
     text-align: right;
     padding: 20px;
 }
@@ -84,7 +89,7 @@ button:active{
 #keys{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 10px;
     border-radius: 20px;
     background-color: #333742;
     padding: 15px;
@@ -115,4 +120,25 @@ button:active{
 #display::placeholder{
     color: rgba(255,255,255,1);
     opacity: 1;
+}
+
+@media (max-width: 500px) {
+    #body {
+        width: 92%;
+        min-height: auto;
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    #display {
+        font-size: 25px;
+    }
+
+    #keys {
+        gap: 7px;
+    }
+
+    #keys button {
+        font-size: 18px;
+    }
 }
