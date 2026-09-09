@@ -385,7 +385,7 @@ button:active{ background-color: #cfe2ee; }
     max-width: 360px;
     width: 100%;
     overflow: hidden;
-    padding: 8px;
+    padding: 0px;
 }
 
 .heading{
